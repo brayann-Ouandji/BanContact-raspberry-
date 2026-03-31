@@ -1,6 +1,7 @@
 <?php
 // src/login.php
 require_once __DIR__ . '/Includes/auth.php';
+require_once '/config.php';
 Auth::start();
 if (Auth::check()) { header('Location: ' . BASE_URL . 'dashboard.php'); exit; }
 

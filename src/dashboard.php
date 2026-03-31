@@ -1,6 +1,7 @@
 <?php
 // src/dashboard.php
 require_once __DIR__ . '/Includes/auth.php';
+require_once '/config.php';
 Auth::require();
 
 $db     = DB::get();
@@ -42,7 +43,7 @@ if ($role === 'admin') {
 }
 
 $title = 'Tableau de bord';
-require 'pages/_header.php';
+require 'Pages/_header.php';
 ?>
 
 <div class="wrap">
@@ -52,7 +53,7 @@ require 'pages/_header.php';
       <p>Bienvenue, <?= htmlspecialchars($_SESSION['user_nom']) ?> 👋</p>
     </div>
     <?php if ($role === 'user'): ?>
-      <a href="pages/crediter.php" class="btn btn-primary">+ Créditer mon compte</a>
+      <a href="Pages/crediter.php" class="btn btn-primary">+ Créditer mon compte</a>
     <?php endif; ?>
   </div>
 

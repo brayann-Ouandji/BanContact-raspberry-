@@ -79,8 +79,9 @@ require '_header.php';
             <td><?= htmlspecialchars($u['prenom'].' '.$u['nom']) ?></td>
             <td style="color:var(--muted)"><?= htmlspecialchars($u['email']) ?></td>
             <td><?php
-              $rc = match($u['role']) { 'admin' => 'red', 'merchant' => 'blue', default => 'green' };
-              $rl = match($u['role']) { 'admin' => 'Admin', 'merchant' => 'Commerçant', default => 'User' };
+			$rc = 'green'; $rl = 'User';
+			if ($u['role'] === 'admin') { $rc = 'red'; $rl = 'Admin'; }
+			elseif ($u['role'] === 'merchant') { $rc = 'blue'; $rl = 'Commerçant'; }
               echo "<span class='tag tag-$rc'>$rl</span>";
             ?></td>
             <td style="font-family:var(--mono)"><?= number_format((float)$u['solde'], 2, ',', ' ') ?> €</td>

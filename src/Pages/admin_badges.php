@@ -1,6 +1,7 @@
 <?php
 // src/pages/admin_badges.php
 require_once __DIR__ . '/../../src/Includes/auth.php';
+require_once '/config.php';
 Auth::requireRole('admin');
 
 $db  = DB::get();
@@ -18,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             try {
                 $db->prepare('INSERT INTO badges (uid, user_id) VALUES (?,?)')->execute([$uid, $userId]);
                 $msg = ['type' => 'ok', 'text' => "Badge $uid enregistré."];
-            } catch (PDOException) {
+            } catch (PDOException $e) {
                 $msg = ['type' => 'err', 'text' => 'Cet UID existe déjà.'];
             }
         }

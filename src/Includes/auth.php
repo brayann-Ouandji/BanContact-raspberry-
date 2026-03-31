@@ -2,6 +2,7 @@
 // src/includes/auth.php
 
 require_once __DIR__ . '/db.php';
+require_once '/config.php';
 
 class Auth {
 

@@ -1,8 +1,16 @@
 <?php
 // src/pages/_header.php  — inclus par toutes les pages protégées
 $role = Auth::role();
-$roleLabel = match($role) { 'admin' => 'Admin', 'merchant' => 'Commerçant', default => 'Utilisateur' };
-$roleClass = match($role) { 'admin' => 'red', 'merchant' => 'blue', default => 'green' };
+if ($role === 'admin') {
+    $roleLabel = 'Admin';
+    $roleClass = 'red';
+} elseif ($role === 'merchant') {
+    $roleLabel = 'Commerçant';
+    $roleClass = 'blue';
+} else {
+    $roleLabel = 'Utilisateur';
+    $roleClass = 'green';
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
