@@ -1,6 +1,6 @@
 <?php
 // src/pages/transactions.php
-require_once __DIR__ . '/../../src/includes/auth.php';
+require_once __DIR__ . '/../../src/Includes/auth.php';
 Auth::require();
 
 $db     = DB::get();

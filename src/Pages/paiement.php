@@ -1,7 +1,7 @@
 <?php
 // src/pages/paiement.php
-require_once __DIR__ . '/../../src/includes/auth.php';
-require_once __DIR__ . '/../../src/includes/rfid.php';
+require_once __DIR__ . '/../../src/Includes/auth.php';
+require_once __DIR__ . '/../../src/Includes/rfid.php';
 Auth::requireRole('admin', 'merchant');
 
 $msg = null;

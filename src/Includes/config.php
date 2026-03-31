@@ -1,5 +1,5 @@
 <?php
-// src/includes/config.php
+// src/Includes/config.php
 
 define('DB_HOST',    'localhost');
 define('DB_NAME',    'rfid_payment');
