@@ -1,7 +1,7 @@
 <?php
 // src/dashboard.php
 require_once __DIR__ . '/Includes/auth.php';
-require_once '/config.php';
+//require_once '/config.php';
 Auth::require();
 
 $db     = DB::get();
