@@ -8,7 +8,7 @@ fi
 
 echo "=== 1. Mise à jour du système et installation des paquets ==="
 apt-get update
-apt-get install -y apache2 php libapache2-mod-php mariadb-server php-mysql git rsync
+apt-get install -y apache2 php libapache2-mod-php mysql-server php-mysql git rsync
 
 echo "=== 2. Configuration de la base de données ==="
 # Création de la base et de l'utilisateur (issu de ton config.php)
