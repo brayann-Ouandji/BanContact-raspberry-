@@ -32,8 +32,8 @@ chmod -R 755 /var/www/html/
 
 echo "=== 4. Installation du script RFID ==="
 # Création du dossier attendu par ton config.php
-mkdir -p /home/pi/script
-cp script/tag_detect.sh /home/pi/script/
+#mkdir -p /home/pi/script
+#cp script/tag_detect.sh /home/pi/script/
 chmod +x /home/pi/script/tag_detect.sh
 
 echo "=== 5. Configuration de Sudoers pour PHP ==="
