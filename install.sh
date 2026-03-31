@@ -42,4 +42,4 @@ echo "www-data ALL=(ALL) NOPASSWD: /home/pi/script/tag_detect.sh" > /etc/sudoers
 chmod 0440 /etc/sudoers.d/rfid_nopasswd
 
 echo "=== Installation terminée avec succès ! ==="
-echo "Accédez à l'application via : http://10.3.183.21 
+echo "Accédez à l'application via : http://10.3.183.21"
