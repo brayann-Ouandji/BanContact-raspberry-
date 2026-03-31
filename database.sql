@@ -45,7 +45,7 @@ CREATE TABLE transactions (
 );
 
 -- ── Données de démo ──────────────────────────────────────
--- Mot de passe par défaut : "Admin1234!" pour tous les comptes
+-- Mot de passe par défaut : "password" pour tous les comptes
 INSERT INTO users (nom, prenom, email, mot_de_passe, role) VALUES
 ('Admin',   'System', 'admin@rfid.local',    '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin'),
 ('Durand',  'Claire', 'user@rfid.local',     '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'user'),
