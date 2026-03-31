@@ -31,9 +31,9 @@ rm -rf /var/www/html/*
 rsync -av --exclude='install.sh' --exclude='database.sql' --exclude='script/' ./ /var/www/html/
 
 # CORRECTION VITALE : On s'assure que le dossier Includes est bien en minuscule pour Linux !
-if [ -d "/var/www/html/src/Includes" ]; then
-    mv /var/www/html/src/Includes /var/www/html/src/Includes
-fi
+#if [ -d "/var/www/html/src/Includes" ""]; then
+#    mv /var/www/html/src/Includes /var/www/html/src/Includes
+#fi
 
 # On donne les bons droits à Apache
 chown -R www-data:www-data /var/www/html/
