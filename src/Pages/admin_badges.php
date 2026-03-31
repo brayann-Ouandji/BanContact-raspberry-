@@ -1,7 +1,7 @@
 <?php
 // src/pages/admin_badges.php
 require_once __DIR__ . '/../../src/Includes/auth.php';
-require_once '/config.php';
+//require_once '/config.php';
 Auth::requireRole('admin');
 
 $db  = DB::get();

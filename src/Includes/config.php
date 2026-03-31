@@ -8,7 +8,7 @@ define('DB_PASS',    'root');
 define('DB_CHARSET', 'utf8mb4');
 
 define('APP_NAME',   'RFID Pay');
-define('BASE_URL',   '/');               // adapter si sous-dossier
+define('BASE_URL',   '/src/');               // adapter si sous-dossier
 
 define('RFID_SCRIPT', '/home/pi/script/tag_detect.sh');
 
